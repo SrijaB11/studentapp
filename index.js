@@ -24,6 +24,7 @@ connectDB();
 app.use("/student", studentRoutes);
 
 // ✅ SERVER
+const PORT = process.env.ORT || 5000;
 app.listen(5000, () => {
   console.log("Server is running on port 5000");
 });
